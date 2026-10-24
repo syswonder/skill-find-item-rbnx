@@ -13,8 +13,11 @@ start: bash scripts/start.sh
 
 capabilities:
   - name: robonix/skill/find_item/driver
+    transport: grpc
     path: capabilities/driver.v1.toml
   - name: robonix/skill/find_item/look_at
+    transport: mcp
     path: capabilities/look_at.v1.toml
   - name: robonix/skill/find_item/look_in
+    transport: mcp
     path: capabilities/look_in.v1.toml
