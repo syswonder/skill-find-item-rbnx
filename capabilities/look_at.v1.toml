@@ -1,0 +1,12 @@
+[contract]
+id          = "robonix/skill/find_item/look_at"
+version     = "1"
+kind        = "skill"
+idl         = "find_item/srv/LookAtObject.srv"
+description = "Drive next to a remembered object through navigation and return one camera photo of it."
+
+[mode]
+type = "rpc"
+
+[semantics]
+user_invocable = true

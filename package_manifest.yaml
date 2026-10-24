@@ -1,0 +1,20 @@
+manifestVersion: 1
+
+package:
+  name: robonix.skill.find_item
+  version: 0.1.0
+  description: Find a lost item from what the robot remembers, then search room by room, after asking what it looks like.
+  tags: [skill, object-search, navigation, camera, scene]
+  maintainers: [wheatfox <wheatfox17@icloud.com>]
+  license: MulanPSL-2.0
+
+build: bash scripts/build.sh
+start: bash scripts/start.sh
+
+capabilities:
+  - name: robonix/skill/find_item/driver
+    path: capabilities/driver.v1.toml
+  - name: robonix/skill/find_item/look_at
+    path: capabilities/look_at.v1.toml
+  - name: robonix/skill/find_item/look_in
+    path: capabilities/look_in.v1.toml

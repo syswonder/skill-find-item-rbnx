@@ -1,0 +1,12 @@
+[contract]
+id          = "robonix/skill/find_item/look_in"
+version     = "1"
+kind        = "skill"
+idl         = "find_item/srv/LookInRegion.srv"
+description = "Drive to a region through navigation and return one camera photo taken there."
+
+[mode]
+type = "rpc"
+
+[semantics]
+user_invocable = true
